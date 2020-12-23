@@ -104,10 +104,10 @@
     - replaceAppsV1NamespacedReplicaSetStatus
 
 ***** ReplicaSet Conformance tests:
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] Garbage collector should orphan RS created by deployment when deleteOptions.PropagationPolicy is Orphan [Conformance]
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apimachinery/garbage_collector.go#L506-L558][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] Garbage collector should orphan RS created by deployment when deleteOptions.PropagationPolicy is Orphan [Conformance] ]]
 -  listAppsV1NamespacedReplicaSet
 - 	readAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] ResourceQuota should create a ResourceQuota and capture the life of a replica set. [Conformance]
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apimachinery/resource_quota.go#L421-L458][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] ResourceQuota should create a ResourceQuota and capture the life of a replica set. [Conformance] ]]
 -   createAppsV1NamespacedReplicaSet
 - 	deleteAppsV1NamespacedReplicaSet
 [[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L116-L134][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should delete old replica sets [Conformance] ]]
