@@ -46,44 +46,44 @@
      - deleteAppsV1CollectionNamespacedStatefulSet
 
 ***** StatefulSet Conformance test:
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Burst scaling should run to completion even with unhealthy pods [Slow] [Conformance]
-  createAppsV1NamespacedStatefulSet
-	deleteAppsV1NamespacedStatefulSet
-	listAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSet
-	replaceAppsV1NamespacedStatefulSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Scaling should happen in predictable order and halt if any stateful pod is unhealthy [Slow] [Conformance]
-  createAppsV1NamespacedStatefulSet
-	deleteAppsV1NamespacedStatefulSet
-	listAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSet
-	replaceAppsV1NamespacedStatefulSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] should have a working scale subresource [Conformance]
-  createAppsV1NamespacedStatefulSet
-	deleteAppsV1NamespacedStatefulSet
-	listAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSetScale
-	replaceAppsV1NamespacedStatefulSet
-	replaceAppsV1NamespacedStatefulSetScale
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] should perform canary updates and phased rolling updates of template modifications [Conformance]
-  createAppsV1NamespacedStatefulSet
-	deleteAppsV1NamespacedStatefulSet
-	listAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSet
-	replaceAppsV1NamespacedStatefulSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] should perform rolling updates and roll backs of template modifications [Conformance]
-  createAppsV1NamespacedStatefulSet
-	deleteAppsV1NamespacedStatefulSet
-	listAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSet
-	replaceAppsV1NamespacedStatefulSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Should recreate evicted statefulset [Conformance]
-  createAppsV1NamespacedStatefulSet
-	deleteAppsV1NamespacedStatefulSet
-	listAppsV1NamespacedStatefulSet
-	readAppsV1NamespacedStatefulSet
-	replaceAppsV1NamespacedStatefulSet
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L687-L722][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Burst scaling should run to completion even with unhealthy pods [Slow] [Conformance] ]]
+-   createAppsV1NamespacedStatefulSet
+- 	deleteAppsV1NamespacedStatefulSet
+- 	listAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSet
+- 	replaceAppsV1NamespacedStatefulSet
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L577-L613e2][e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Scaling should happen in predictable order and halt if any stateful pod is unhealthy [Slow] [Conformance] ]]
+-   createAppsV1NamespacedStatefulSet
+- 	deleteAppsV1NamespacedStatefulSet
+- 	listAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSet
+- 	replaceAppsV1NamespacedStatefulSet
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L839-L872][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] should have a working scale subresource [Conformance] ]]
+-   createAppsV1NamespacedStatefulSet
+- 	deleteAppsV1NamespacedStatefulSet
+- 	listAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSetScale
+- 	replaceAppsV1NamespacedStatefulSet
+- 	replaceAppsV1NamespacedStatefulSetScale
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L307-L488][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] should perform canary updates and phased rolling updates of template modifications [Conformance] ]]
+-  createAppsV1NamespacedStatefulSet
+- 	deleteAppsV1NamespacedStatefulSet
+- 	listAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSet
+- 	replaceAppsV1NamespacedStatefulSet
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L296-L300][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] should perform rolling updates and roll backs of template modifications [Conformance] ]]
+-  createAppsV1NamespacedStatefulSet
+- 	deleteAppsV1NamespacedStatefulSet
+- 	listAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSet
+- 	replaceAppsV1NamespacedStatefulSet
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L729-L830][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Should recreate evicted statefulset [Conformance] ]]
+-  createAppsV1NamespacedStatefulSet
+- 	deleteAppsV1NamespacedStatefulSet
+- 	listAppsV1NamespacedStatefulSet
+- 	readAppsV1NamespacedStatefulSet
+- 	replaceAppsV1NamespacedStatefulSet
 
 
 
@@ -105,35 +105,35 @@ e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] StatefulSet [k8s
 
 ***** ReplicaSet Conformance tests:
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] Garbage collector should orphan RS created by deployment when deleteOptions.PropagationPolicy is Orphan [Conformance]
-  listAppsV1NamespacedReplicaSet
-	readAppsV1NamespacedReplicaSet
+-  listAppsV1NamespacedReplicaSet
+- 	readAppsV1NamespacedReplicaSet
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] ResourceQuota should create a ResourceQuota and capture the life of a replica set. [Conformance]
-  createAppsV1NamespacedReplicaSet
-	deleteAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should delete old replica sets [Conformance]
-  createAppsV1NamespacedReplicaSet
-	listAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should support proportional scaling [Conformance]
-  listAppsV1NamespacedReplicaSet
-	readAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should support rollover [Conformance]
-  createAppsV1NamespacedReplicaSet
-	listAppsV1NamespacedReplicaSet
-	readAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment RecreateDeployment should delete old pods and create new ones [Conformance]
-  listAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment RollingUpdateDeployment should delete old pods and create new ones [Conformance]
-  createAppsV1NamespacedReplicaSet
-	listAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment should run the lifecycle of a Deployment [Conformance]
-  listAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] ReplicaSet should adopt matching pods on creation and release no longer matching pods [Conformance]
-  createAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] ReplicaSet should serve a basic image on each replica with a public image [Conformance]
-  createAppsV1NamespacedReplicaSet
-e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-scheduling] SchedulerPreemption [Serial] PreemptionExecutionPath runs ReplicaSets to verify preemption running path [Conformance]
-  createAppsV1NamespacedReplicaSet
-	readAppsV1NamespacedReplicaSet
+-   createAppsV1NamespacedReplicaSet
+- 	deleteAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L116-L134][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should delete old replica sets [Conformance] ]]
+-   createAppsV1NamespacedReplicaSet
+- 	listAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L142-L155][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should support proportional scaling [Conformance] ]]
+-  listAppsV1NamespacedReplicaSet
+- 	readAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L126-L134][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should support rollover [Conformance] ]]
+-  createAppsV1NamespacedReplicaSet
+- 	listAppsV1NamespacedReplicaSet
+- 	readAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L107-L110][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment RecreateDeployment should delete old pods and create new ones [Conformance] ]]
+-  listAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L99-L101][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment RollingUpdateDeployment should delete old pods and create new ones [Conformance] ]]
+-   createAppsV1NamespacedReplicaSet
+- 	listAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/deployment.go#L163-L463][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment should run the lifecycle of a Deployment [Conformance] ]]
+-   listAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/replica_set.go#L114-L117][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] ReplicaSet should adopt matching pods on creation and release no longer matching pods [Conformance] ]]
+-  createAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/1ea29cec9c923f18774092df9c3b7d0de7a193c2/test/e2e/apps/replica_set.go#L94-L97][e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] ReplicaSet should serve a basic image on each replica with a public image [Conformance] ]]
+-  createAppsV1NamespacedReplicaSet
+[[https://github.com/kubernetes/kubernetes/blob/master/test/e2e/scheduling/preemption.go#L533-L671][e2e.test/v1.20.0 (linux/amd64) kubeReplicaSets to verify preemption running pathrnetes/7566c9b -- [sig-scheduling] SchedulerPreemption [Serial] PreemptionExecutionPath runs ReplicaSets to verify preemption running path [Conformance] ]]
+-  createAppsV1NamespacedReplicaSet
+-  readAppsV1NamespacedReplicaSet
 
 
 
@@ -214,96 +214,96 @@ and update strategy is RollingUpdate
 
 
 ***** Deployment Conformance tests:
-
+Hyperlinks not added as most of the Deployment endpoints is covered.
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] listing mutating webhooks should work [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] listing validating webhooks should work [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a mutating webhook should work [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] patching/updating a validating webhook should work [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny attaching pod [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny custom resource creation, update and deletion [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should be able to deny pod and configmap creation [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should deny crd creation [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should honor timeout [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should include webhook resources in discovery documents [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate configmap [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate custom resource [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate custom resource with different stored version [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate custom resource with pruning [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should mutate pod and apply defaults after mutation [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should not be able to mutate or prevent deletion of webhook configuration objects [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] AdmissionWebhook [Privileged:ClusterAdmin] should unconditionally reject operations on fail closed webhook [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] Aggregator Should be able to support the 1.17 Sample API Server using the current Aggregator [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] CustomResourceConversionWebhook [Privileged:ClusterAdmin] should be able to convert a non homogeneous list of CRs [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] CustomResourceConversionWebhook [Privileged:ClusterAdmin] should be able to convert from CR v1 to CR v2 [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] Garbage collector should delete RS created by deployment when not orphaning [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-api-machinery] Garbage collector should orphan RS created by deployment when deleteOptions.PropagationPolicy is Orphan [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
+- 	deleteAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should delete old replica sets [Conformance]	createAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should support proportional scaling [Conformance]	createAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
-	replaceAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
+- 	replaceAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment deployment should support rollover [Conformance]	createAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
-	replaceAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
+- 	replaceAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment RecreateDeployment should delete old pods and create new ones [Conformance]	createAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
-	readAppsV1NamespacedDeployment
-	replaceAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
+- 	readAppsV1NamespacedDeployment
+- 	replaceAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment RollingUpdateDeployment should delete old pods and create new ones [Conformance]	createAppsV1NamespacedDeployment
-	listAppsV1NamespacedDeployment
+- 	listAppsV1NamespacedDeployment
 	readAppsV1NamespacedDeployment
 e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b -- [sig-apps] Deployment should run the lifecycle of a Deployment [Conformance]	createAppsV1NamespacedDeployment
-	deleteAppsV1CollectionNamespacedDeployment
-	listAppsV1DeploymentForAllNamespaces
-	listAppsV1NamespacedDeployment
-	patchAppsV1NamespacedDeployment
-	patchAppsV1NamespacedDeploymentStatus
-	readAppsV1NamespacedDeploymentStatus
-	replaceAppsV1NamespacedDeployment
+- 	deleteAppsV1CollectionNamespacedDeployment
+- 	listAppsV1DeploymentForAllNamespaces
+- 	listAppsV1NamespacedDeployment
+- 	patchAppsV1NamespacedDeployment
+- 	patchAppsV1NamespacedDeploymentStatus
+- 	readAppsV1NamespacedDeploymentStatus
+- 	replaceAppsV1NamespacedDeployment
