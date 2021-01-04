@@ -5,13 +5,17 @@
 
 # Introduction<a id="sec-1"></a>
 
-The aim is that all GA API Endpoints should have conformance tests. No new endpoints should be introduced to GA without conformance tests. The current technical debt consist of Endpoints introduced in historical releases without conformance tests. A concerted effort by the community, SIG's and ii have helped to remove all technical debt back to 1.11. 1.10 & 1.11 have 7 endpoints without conformance tests which are currently being addressed. The next block of endpoints that need to be addressed is release 1.9 where there are 33 endpoints without conformance test. All these endpoints belong to the Apps API group.
+The aim is that all GA Kubernetes API Endpoints should have conformance tests. New endpoints should not be introduced to GA without conformance tests. The current technical debt consist of Endpoints introduced in historical releases without conformance tests. 
+A concerted effort by the community, SIG's and ii have helped to remove all technical debt back to 1.11. 1.10 & 1.11 which have 7 endpoints without conformance tests that are currently being addressed. 
+The next block of endpoints that need to be addressed is release 1.9, where there are 33 endpoints without conformance test. All these endpoints belong to the Apps API group.
 
-The aim of this document is to collect information on tested points and the test the brought them to conformance. Collect information on untested endpoints and the relationship between then and also list documentation on those endpoints that will aid in writing conformance tests.
+The aim of this document is to collect information on tested Appspoints and the test the brought them to conformance, collect information on untested endpoints and the relationship between then and also list documentation on those endpoints that will aid in writing conformance tests.
 
 ### Apps endpoints<a id="sec-1-0-1"></a>
 
-According to APISNoop there is a total of 63 GA Apps endpoints at the start of 1.21. 33 of these endpoints, all released to GA in 1.9 do not have conformance tests. The endpoints can be broken down in to 5 "families" which are:
+According to APISNoop there is a total of 63 GA Apps endpoints at the start of 1.21. 
+33 of these endpoints, all released to GA in 1.9, do not have conformance tests. 
+The endpoints can be broken down in to 5 "families" which are:
 
 -   Deployment
 -   Statefulset
@@ -27,9 +31,9 @@ We will now list the endpoints by families and groups with documentation referen
     
     -   patchAppsV1NamespacedDeploymentScale
     -   readAppsV1NamespacedDeploymentScale
-    -   replaceAppsV1NamespacedDeploymentScale See below for "Scale" endpoints.
+    -   replaceAppsV1NamespacedDeploymentScale (See below for "Scale" endpoints.)
     
-    -   replaceAppsV1NamespacedDeploymentStatus An attempt at conformance testing was made in this [test](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/deployment.go#L337-L358)
+    -   replaceAppsV1NamespacedDeploymentStatus - An attempt at conformance testing was made in this [test](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/deployment.go#L337-L358)
 
 2.  Statefulset
 
@@ -45,7 +49,9 @@ We will now list the endpoints by families and groups with documentation referen
     -   listAppsV1StatefulSetForAllNamespaces
     -   deleteAppsV1CollectionNamespacedStatefulSet
     
-    1.  StatefulSet Conformance test:
+    1.  StatefulSet Conformance tests
+    
+    - The following tests cover endpoints as listed:
     
         [e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b &#x2013; [sig-apps] StatefulSet [k8s.io] Basic StatefulSet functionality [StatefulSetBasic] Burst scaling should run to completion even with unhealthy pods [Slow] [Conformance] ](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L687-L722)
         
@@ -117,6 +123,8 @@ We will now list the endpoints by families and groups with documentation referen
     
     1.  ReplicaSet Conformance tests:
     
+     - The following tests cover endpoints as listed:
+    
         [e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b &#x2013; [sig-api-machinery] Garbage collector should orphan RS created by deployment when deleteOptions.PropagationPolicy is Orphan [Conformance] ](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apimachinery/garbage_collector.go#L506-L558)
         
         -   listAppsV1NamespacedReplicaSet
@@ -187,6 +195,8 @@ The Scale endoints use 3 verbs, patch, read & replease. Looking at Statefulset t
 
 1.  ControllerRevision Endpoints
 
+ - The following tests cover endpoints as listed:
+ 
     The ControllerRevision endpoints is the endoints group with the least conformance cover, one endpoint listAppsV1NamespacedControllerRevision is which seem to be incidentally touched by this [test](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/daemon_set.go#L357-L407).
     
     All these endpoint remain without conformance tests:
@@ -201,6 +211,8 @@ The Scale endoints use 3 verbs, patch, read & replease. Looking at Statefulset t
 
 2.  Daemonset Endpoints
 
+ - The following tests cover endpoints as listed:
+ 
     There is 11 endpoints in the family of which 6 is touched by 5 Conformance test in with a varying levels of success: [e2e.test/v1.20.0 (linux/amd64) kubernetes/7566c9b &#x2013; [sig-apps] Daemon set [Serial] should retry creating failed daemon pods [Conformance] ](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/daemon_set.go#L277-L350)
     
     -   deleteAppsV1NamespacedDaemonSet
