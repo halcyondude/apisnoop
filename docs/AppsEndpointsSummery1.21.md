@@ -5,13 +5,13 @@
 
 # Introduction<a id="sec-1"></a>
 
-The aim is that all GA API Endpoints should have comnformance tests. No new endpoints should be introduced to GA without conformance tests. The current technical debt consist of Endpoints introduced in histrical releases without conformance tests. A concerted effort by the community, SIG's and ii have helped to remove all techincal debt back to 1.11. 1.10 & 1.11 have 7 endpoints without conformance test which is currently being addressed. The next block of endpoints that need to be addressed is release 1.9 where there is 33 endpoints without conformance test. All these endpoints belong to the Apps API group.
+The aim is that all GA API Endpoints should have conformance tests. No new endpoints should be introduced to GA without conformance tests. The current technical debt consist of Endpoints introduced in historical releases without conformance tests. A concerted effort by the community, SIG's and ii have helped to remove all technical debt back to 1.11. 1.10 & 1.11 have 7 endpoints without conformance tests which are currently being addressed. The next block of endpoints that need to be addressed is release 1.9 where there are 33 endpoints without conformance test. All these endpoints belong to the Apps API group.
 
-The aim of this document is collect information on tested points and the test the brought them to conformance. Collect infromation on untested endpoints and the relasionship between then and also list documentation on those endpoints that will aid in writing conformance tests.
+The aim of this document is to collect information on tested points and the test the brought them to conformance. Collect information on untested endpoints and the relationship between then and also list documentation on those endpoints that will aid in writing conformance tests.
 
 ### Apps endpoints<a id="sec-1-0-1"></a>
 
-According to APISNoop there is a total of 63 GA Apps endpoints at the start of 1.21. 33 of these endpoints, all released to GA in 1.9 do not have conformance tests. The endoints can be broken down in to 5 "families" which are:
+According to APISNoop there is a total of 63 GA Apps endpoints at the start of 1.21. 33 of these endpoints, all released to GA in 1.9 do not have conformance tests. The endpoints can be broken down in to 5 "families" which are:
 
 -   Deployment
 -   Statefulset
@@ -19,7 +19,7 @@ According to APISNoop there is a total of 63 GA Apps endpoints at the start of 1
 -   Daemonset
 -   ControllerRevision
 
-We will now list the endoints by families and groups with documentation reference.
+We will now list the endpoints by families and groups with documentation reference.
 
 1.  Deployment
 
