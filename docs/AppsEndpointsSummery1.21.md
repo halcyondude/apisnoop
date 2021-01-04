@@ -193,7 +193,7 @@ Endpoints repeat across these families and test methods for endpoints could like
 
 The Scale endoints use 3 verbs, patch, read & replease. Looking at Statefulset the verbs read and replace is aready covered by this [test](https://github.com/kubernetes/kubernetes/blob/master/test/e2e/apps/statefulset.go#L839-L872) The statefulsetScale group is only missing a conformance test for patchAppsV1NamespacedStatefulSetScale. If the Conformance is update to cover all 3 &#x2026;Scale endpoints, it is likely the same methods could be applied to Deployment and Replicaset resources.
 
-1.  ControllerRevision Endpoints
+4.  ControllerRevision Endpoints
 
  - The following tests cover endpoints as listed:
  
@@ -209,7 +209,7 @@ The Scale endoints use 3 verbs, patch, read & replease. Looking at Statefulset t
     -   listAppsV1ControllerRevisionForAllNamespaces
     -   deleteAppsV1CollectionNamespacedControllerRevision
 
-2.  Daemonset Endpoints
+5.  Daemonset Endpoints
 
  - The following tests cover endpoints as listed:
  
