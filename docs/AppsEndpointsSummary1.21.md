@@ -27,7 +27,7 @@ We will now list the endpoints by families and groups with documentation referen
 
 1.  Deployment
 
-    Untested Endpoints:
+     Untested Endpoints:
     
     -   patchAppsV1NamespacedDeploymentScale
     -   readAppsV1NamespacedDeploymentScale
